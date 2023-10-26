@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tambahkan tautan Bootstrap CSS di sini -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>BELAJAR MEMBUAT FORM</title>
+    <style>
+        /* CSS khusus untuk halaman beranda */
+        .header {
+            background-image: url(); /* Ganti 'gambar-latar-belakang.jpg' dengan URL gambar yang Anda inginkan */
+            background-size: cover;
+            background-position: center;
+            color: #1d6e04;
+            text-align: center;
+            padding: 70px 0;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand {
+            color: #d7d1ff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">MUH. MANURUL HIDAYAT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="HOME.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artkikel2.html">Tentang Saya</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="BUKU_TAMU.html">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Jadwalkuliahbaru.html">Jadwal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript.html">JavaScript</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kalkulator.html">Kalkulator</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Form Buku Tamu</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama_lengkap">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" size="40">
+            </div>
+            
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="laki" name="jenis_kelamin" value="L" checked>
+                    <label class="form-check-label" for="laki">Laki-Laki</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="perempuan" name="jenis_kelamin" value="P">
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat Tinggal:</label>
+                <input type="text" class="form-control" id="alamat" name="alamat" size="40">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" size="40">
+            </div>
+
+            <div class="form-group">
+                <label>Aktif Pada Sosial Media:</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="facebook" name="Facebook" value="Ya" checked>
+                    <label class="form-check-label" for="facebook">Facebook</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="twitter" name="Twitter" value="Ya">
+                    <label class="form-check-label" for="twitter">Twitter</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="instagram" name="Instagram" value="Ya">
+                    <label class="form-check-label" for="instagram">Instagram</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="path" name="Path" value="Ya">
+                    <label class="form-check-label" for="path">Path</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="info">Mengetahui web ini dari:</label>
+                <select class="form-control" id="info" name="info">
+                    <option selected="select">-= Pilih =-</option>
+                    <option value="web">Web</option>
+                    <option value="surat kabar">Surat Kabar</option>
+                    <option value="teman kerbat">Teman Kerabat</option>
+                    <option value="browsing internet">Browsing Internet</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea class="form-control" id="pesan" name="pesan" cols="40"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+    </div>
+    <div class="header">
+            <a href="index.html" class="btn btn-primary btn-lg">HOME</a>
+        </div>
+
+    <!-- Tambahkan script Bootstrap JavaScript (jQuery dan Popper.js) di sini -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
